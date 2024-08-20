@@ -1,78 +1,30 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #004080; /* Dark Blue */
-    color: #ffffff; /* White for contrast */
-    padding: 20px 0;
-    text-align: center;
-}
-
-header .logo h1 {
-    font-size: 2.5rem;
-    margin-bottom: 5px;
-}
-
-header .logo p {
-    font-size: 1.2rem;
-    font-weight: lighter;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 10px 0;
-    background-color: #003366; /* Slightly darker blue */
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ffffff; /* White for text */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    color: #f39c12; /* Highlight on hover */
-}
-
 #banner {
     background: url('banner-image.jpg') no-repeat center center/cover;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #ffffff; /* White text on dark image */
+    color: #ffffff; /* White text */
 }
 
 .banner-content {
     text-align: center;
     max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background behind the text */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
 }
 
 .banner-content h2 {
     font-size: 3rem;
     margin-bottom: 10px;
+    color: #ffffff; /* Ensure the headline is white */
 }
 
 .banner-content p {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    color: #ffffff; /* Ensure the paragraph text is white */
 }
 
 .cta-button {
@@ -86,35 +38,4 @@ nav ul li a:hover {
 
 .cta-button:hover {
     background-color: #d87d0c; /* Slightly darker on hover */
-}
-
-main {
-    padding: 40px 20px;
-}
-
-section h2 {
-    font-size: 2.5rem;
-    color: #004080; /* Dark Blue */
-    margin-bottom: 20px;
-}
-
-article h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-article p {
-    margin-bottom: 20px;
-    font-size: 1rem;
-    color: #666666; /* Gray for subtext */
-}
-
-footer {
-    background-color: #004080;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
