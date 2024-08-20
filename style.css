@@ -6,29 +6,26 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header .logo {
+    background-color: #004080; /* Dark Blue */
+    color: #ffffff; /* White for contrast */
+    padding: 20px 0;
     text-align: center;
 }
 
 header .logo h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 5px;
 }
 
 header .logo p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: lighter;
 }
 
@@ -37,6 +34,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     padding: 10px 0;
+    background-color: #003366; /* Slightly darker blue */
 }
 
 nav ul li {
@@ -44,18 +42,22 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff; /* White for text */
     text-decoration: none;
     font-weight: bold;
 }
 
+nav ul li a:hover {
+    color: #f39c12; /* Highlight on hover */
+}
+
 #banner {
     background: url('banner-image.jpg') no-repeat center center/cover;
-    height: 300px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: #ffffff; /* White text on dark image */
 }
 
 .banner-content {
@@ -64,47 +66,55 @@ nav ul li a {
 }
 
 .banner-content h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .banner-content p {
-    font-size: 1.2rem;
-    margin: 10px 0 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .cta-button {
     padding: 10px 20px;
-    background-color: #f39c12;
-    color: #fff;
+    background-color: #f39c12; /* Bright Orange */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
 }
 
+.cta-button:hover {
+    background-color: #d87d0c; /* Slightly darker on hover */
+}
+
 main {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    color: #004080; /* Dark Blue */
+    margin-bottom: 20px;
 }
 
 article h3 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
 article p {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666666; /* Gray for subtext */
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #004080;
+    color: #ffffff;
     text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    width: 100%;
+    padding: 20px 0;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
